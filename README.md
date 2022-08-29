@@ -1,8 +1,8 @@
 # Twomes boiler BASE  hardware
 
 This repository contains the open hardware design files for the Twomes boiler BASE device, which can be used as a BASE module for the [M5Stack CoreInk device](https://shop.m5stack.com/collections/m5-controllers/products/m5stack-esp32-core-ink-development-kit1-54-elnk-display). This device can:
-* monitor OpenTherm signals between boiler and thermostat, similar to the [Twomes OpenTherm monitor](https://github.com/energietransitie/twomes-opentherm-monitor-hardware). 
-* monitor with two pipe clips supply and return temperatures of hot water supplied from the boiler to the radiators and returning from the radiators. 
+* monitor OpenTherm signals between boiler and thermostat, similar to the [Twomes OpenTherm monitor](https://github.com/energietransitie/twomes-opentherm-monitor-hardware);
+* monitor with two pipe clips supply and return temperatures of hot water supplied from the boiler to the radiators and returning from the radiators, similar to the [Twomes Temperature Monitor Hardware](https://github.com/energietransitie/twomes-temp-monitor-hardware). 
 
 <img src="./images/pcb.jpg" width="600"  />
 
