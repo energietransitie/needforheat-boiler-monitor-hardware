@@ -1,10 +1,17 @@
-# Twomes boiler BASE  hardware
+# NeedForHeat Boiler Module hardware
 
-This repository contains the open hardware design files for the Twomes boiler BASE device, which can be used as a BASE module for the [M5Stack CoreInk device](https://shop.m5stack.com/collections/m5-controllers/products/m5stack-esp32-core-ink-development-kit1-54-elnk-display). For the associated firmware, please see the [twomes-boiler-base-firmware](https://github.com/energietransitie/twomes-boiler-base-firmware) repository.
+This repository contains the open hardware design files for the NeedForHeat Boiler Module hardware, which consists of PCB and 3D printable enclusures for:
 
-This device can:
+* BASE module for the [M5Stack CoreInk device](https://shop.m5stack.com/collections/m5-controllers/products/m5stack-esp32-core-ink-development-kit1-54-elnk-display);
+* Thermostat Cable Splitter module, which is inserted by the subject in the signal path between boiler and thermostat;
+* two pipe clips with temperature sensors that can be clipped on the supply and return pipes cat carry hot water from the boiler to the radiators and returning from the radiators.
+
+For the associated firmware, please see the [twomes-boiler-base-firmware](https://github.com/energietransitie/twomes-boiler-base-firmware) repository
+
+This integrated device can:
 * monitor OpenTherm signals between boiler and thermostat, similar to the [Twomes OpenTherm monitor](https://github.com/energietransitie/twomes-opentherm-monitor-hardware);
-* monitor with two pipe clips supply and return temperatures of hot water supplied from the boiler to the radiators and returning from the radiators, similar to the [Twomes Temperature Monitor Hardware](https://github.com/energietransitie/twomes-temp-monitor-hardware). 
+* monitor on/off signals between boiler and thermostat that do not adhere to the OpenTherm standard;
+* monitor with supply and return water temperatures, similar to the [Twomes Temperature Monitor Hardware](https://github.com/energietransitie/twomes-temp-monitor-hardware).
 
 <img src="./images/pcb.jpg" width="600"  />
 
@@ -57,14 +64,16 @@ To change the hardware design of the enclosure, you need either:
 
 The source files of the enclosure can be found in the folder [enclosure](./enclosure). We include both .f3d source files and .step source files we obtained after conversion.
 ## Features
-The Twomes Something Shield features the follwoing main hardware components:
-* awesome feature 1;
-* awesome feature 2;
-* awesome feature 3.
+The  NeedForHeat Boiler Module features the follwoing main hardware components:
+* Thermostat Cable Splitter PCB circuit to monitor OpenTherm communication, including LEDs and optocouplers;
+* BoilerBASE PCB circuit that connects signals coming from the Thermostat Cable Splitter PCB (RJ45 connector) to the M5Stack CoreINK BASE connector;
+* BoilerBASE PCB circuit that connects signals of coing from two pipe clips PCBs (RJ12 connector) to the M5Stack CoreINK BASE connector;
 
 To-do:
-* wow improvement to be done 1;
-* wow improvement to be done 2.
+* add 4-position pluggable screw terminals on Thermostat Cable Splitter PCB for easier connection by subject;
+* components (e.g. diodes, MOSFETs) to allow connecting the stripped signal wires in the cable (2/3/4 wires!) by the subject in any order and to ensure comunication between thermostat and boiler work as before after the BoilerBASE is sent back to the researcher;
+* reconsider placement of optocouplers and LEDs: on BoilerBASE PCB or on Thermostat Cable Splitter PCB;
+* add 868 MHz SMD transceiver chip on BoilerBASE PCB to enable monitoring of various wireless thermostat solutions.
 
 ## Status
 Project is:  _in progress_, _finished_, _no longer continued_ and why?
