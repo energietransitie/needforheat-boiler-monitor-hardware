@@ -3,7 +3,7 @@
 This repository contains the open hardware design files for the NeedForHeat Boiler Monitor hardware, which consists of PCB and 3D printable pipeclamps for:
 
 * BASE module for the [M5Stack CoreInk device](https://shop.m5stack.com/collections/m5-controllers/products/m5stack-esp32-core-ink-development-kit1-54-elnk-display);
-* Thermostat Cable Splitter module, which is inserted by the subject in the signal path between boiler and thermostat;
+* 4-Terminal Thermostat Cable Splitter module, which is inserted by the subject in the signal path between boiler and thermostat;
 * two pipe clips with temperature sensors that can be clipped on the supply and return pipes cat carry hot water from the boiler to the radiators and returning from the radiators.
 
 For the associated firmware, please see the [twomes-boiler-base-firmware](https://github.com/energietransitie/twomes-boiler-base-firmware) repository
