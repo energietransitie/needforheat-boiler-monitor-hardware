@@ -26,7 +26,7 @@ This integrated device can:
 * [Credits](#credits)
 
 ## General info
-This repository contains the open hardware designs files for the NFH Boiler Monitor. It also includes a `docs` folder with recent Kicad files and 3D designs.
+This repository contains the open hardware designs files and production files for the NFH Boiler Monitor. It also includes a `docs` folder with the recent Kicad files.
 
 For the associated firmware that you can run on this device, please see [Twomes boiler BASE firmware](https://github.com/energietransitie/twomes-boiler-base-firmware).
 
