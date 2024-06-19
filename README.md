@@ -1,6 +1,6 @@
-# NeedForHeat Boiler Module hardware
+# NeedForHeat Boiler Monitor hardware
 
-This repository contains the open hardware design files for the NeedForHeat Boiler Module hardware, which consists of PCB and 3D printable enclusures for:
+This repository contains the open hardware design files for the NeedForHeat Boiler Monitor hardware, which consists of PCB and 3D printable pipeclamps for:
 
 * BASE module for the [M5Stack CoreInk device](https://shop.m5stack.com/collections/m5-controllers/products/m5stack-esp32-core-ink-development-kit1-54-elnk-display);
 * Thermostat Cable Splitter module, which is inserted by the subject in the signal path between boiler and thermostat;
@@ -13,7 +13,7 @@ This integrated device can:
 * monitor on/off signals between boiler and thermostat that do not adhere to the OpenTherm standard;
 * monitor with supply and return water temperatures, similar to the [Twomes Temperature Monitor Hardware](https://github.com/energietransitie/twomes-temp-monitor-hardware).
 
-<img src="./images/pcb.jpg" width="600"  />
+<img src="./images/FrontSplitter.jpg" width="600"  />
 
 ## Table of contents
 * [General info](#general-info)
@@ -26,7 +26,7 @@ This integrated device can:
 * [Credits](#credits)
 
 ## General info
-This repository contains the open hardware designs files for the Twomes something shield / base. It also includes a `docs` folder with recent printouts of the [schematics](./docs/twomes-hardware-repository-sch.pdf) and [PCB layout](./docs/twomes-hardware-repository-pcb.pdf). 
+This repository contains the open hardware designs files for the NFH Boiler Monitor. It also includes a `docs` folder with recent Kicad files and 3D designs.
 
 For the associated firmware that you can run on this device, please see [Twomes boiler BASE firmware](https://github.com/energietransitie/twomes-boiler-base-firmware).
 
