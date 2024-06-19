@@ -28,6 +28,10 @@ This integrated device can:
 ## General info
 This repository contains the open hardware designs files and production files for the NFH Boiler Monitor. It also includes a `docs` folder with the recent Kicad files.
 
+The splitter features a 4 wire terminal on each side in which the cables can be connected to in almost (see note) any orientation without the installer having to worry about the order. The LED's will light up if the splitter is working correctly.
+
+Note: If the leds dont light up, switch the cables in wire terminal on the thermostat side. Either switch cable 1 and 2 or switch cable 3 and 4. 
+
 For the associated firmware that you can run on this device, please see [Twomes boiler BASE firmware](https://github.com/energietransitie/twomes-boiler-base-firmware).
 
 ## Producing
@@ -56,33 +60,31 @@ To convert the PCBs into a format suitable for fabrication, consult the webpage 
 
 ### 3D Designs
 To change the hardware design of the enclosure, you need either:
-* [Autodesk Fusion 360](https://www.kicad.org/download/) installed (Autodesk provides 30 day free trials and [free one-year educational access](https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual) to its products and services for eligible students, teachers and research staff); 
+* [Autodesk Fusion 360]([https://www.kicad.org/download/](https://www.autodesk.com/products/fusion-360/personal)) installed (Autodesk provides 30 day free trials and [free one-year educational access](https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual) to its products and services for eligible students, teachers and research staff); 
 * or [FreeCAD](https://www.freecadweb.org/), an open source alternative.
 
-The source files of the enclosure can be found in the folder [enclosure](./enclosure). We include both .f3d source files and .step source files we obtained after conversion.
 ## Features
-The  NeedForHeat Boiler Module features the follwoing main hardware components:
-* Thermostat Cable Splitter PCB circuit to monitor OpenTherm communication, including LEDs and optocouplers;
-* BoilerBASE PCB circuit that connects signals coming from the Thermostat Cable Splitter PCB (RJ45 connector) to the M5Stack CoreINK BASE connector;
-* BoilerBASE PCB circuit that connects signals of coing from two pipe clips PCBs (RJ12 connector) to the M5Stack CoreINK BASE connector;
+The  NeedForHeat Boiler Monitor features the follwoing main hardware components:
+* 4 Wire Terminal Thermostat Cable Splitter PCB circuit to monitor OpenTherm communication, including LEDs and optocouplers.
+* Pipeclamps PCB circuit and designs for measuring temperatures from the pipes beneath the boiler.
+* 3D Designs for pipeclamps with a lock.
 
 To-do:
-* add 4-position pluggable screw terminals on Thermostat Cable Splitter PCB for easier connection by subject;
-* components (e.g. diodes, MOSFETs) to allow connecting the stripped signal wires in the cable (2/3/4 wires!) by the subject in any order and to ensure comunication between thermostat and boiler work as before after the BoilerBASE is sent back to the researcher;
-* reconsider placement of optocouplers and LEDs: on BoilerBASE PCB or on Thermostat Cable Splitter PCB;
+* Redesign the thermostat side on the cable splitter so its 100% orientation independent.
+* Redesign the cableclamps design by a mechanical engineer to ensure quality and durability.
+* Design an enclosure for the Thermostat Cable splitter.
 * add 868 MHz SMD transceiver chip on BoilerBASE PCB to enable monitoring of various wireless thermostat solutions.
 
 ## Status
-Project is:  _in progress_, _finished_, _no longer continued_ and why?
+Project is:  _finished_
 
 ## License
 The hardware designs in this repository are available under the [CERN-OHL-P v2 license](./LICENSE), Copyright 2024 [Research group Energy Transition, Windesheim University of Applied Sciences](https://windesheim.nl/energietransitie)
 
 ## Credits
-This software is a collaborative effort of:
-* Huub Buter · [@Github_handle_1](https://github.com/<github_handle_1>)
-* Mirjam van Wee · [@Github_handle_2](https://github.com/<github_handle_2>)
-* Kees Fokker · [@Github_handle_3](https://github.com/<github_handle_3>)
+This hardware is a collaborative effort of:
+* Bram Busch · [@Github](https://github.com/<github_handle_1>)
+* Daan Tellegen · [@Github](https://github.com/<github_handle_2>)
  
 Product owners:
 * Marco Winkelman · [@MarcoW71](https://github.com/MarcoW71)
