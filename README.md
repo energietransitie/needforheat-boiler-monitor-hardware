@@ -50,11 +50,11 @@ The folder [3D_designs/Production](./3D_designs/Production) contains exported ST
 To change the hardware design of the PCB, you need:
 * [KiCad](https://www.kicad.org/download/) installed to change te PCB design. 
 
-The KiCad source files of the PCB can be found in the folder [pcb](./pcb).
+The KiCad source files of the PCB can be found in the zip folder located in [docs](./docs).
 
 To convert the PCBs into a format suitable for fabrication, consult the webpage of your PCB manufacturer of choice. For example, see the [JLCPCB guide on how to export Gerbers](https://support.jlcpcb.com/article/149-how-to-generate-gerber-and-drill-files-in-kicad) and the  [JLCPCB guide how to export the BOM and POS files](https://support.jlcpcb.com/article/84-how-to-generate-the-bom-and-centroid-file-from-kicad). You may also use a KiCad plug-in for this purpose such as [kicad-jlcpcb-tools](https://github.com/Bouni/kicad-jlcpcb-tools).
 
-### Enclosure
+### 3D Designs
 To change the hardware design of the enclosure, you need either:
 * [Autodesk Fusion 360](https://www.kicad.org/download/) installed (Autodesk provides 30 day free trials and [free one-year educational access](https://www.autodesk.com/education/edu-software/overview?sorting=featured&filters=individual) to its products and services for eligible students, teachers and research staff); 
 * or [FreeCAD](https://www.freecadweb.org/), an open source alternative.
