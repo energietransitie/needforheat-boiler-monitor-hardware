@@ -4,7 +4,7 @@ This repository contains the open hardware design files for the NeedForHeat Boil
 
 * BASE module for the [M5Stack CoreInk device](https://shop.m5stack.com/collections/m5-controllers/products/m5stack-esp32-core-ink-development-kit1-54-elnk-display);
 * 4-Terminal Thermostat Cable Splitter module, which is inserted by the subject in the signal path between boiler and thermostat;
-* two pipe clamps with temperature sensors that can be clipped on the supply and return pipes that carry hot water from the boiler to the radiators and returning from the radiators.
+* Two pipe clamps with temperature sensors that can be clipped on the supply and return pipes that carry hot water from the boiler to the radiators and returning from the radiators.
 
 For the associated firmware, please see the [twomes-boiler-base-firmware](https://github.com/energietransitie/twomes-boiler-base-firmware) repository
 
@@ -83,7 +83,7 @@ The hardware designs in this repository are available under the [CERN-OHL-P v2 l
 
 ## Credits
 This hardware is a collaborative effort of:
-* Bram Busch · [@Github](https://github.com/<github_handle_1>)
+* Bram Busch · [@Github](https://github.com/BlueRisen)
 * Daan Tellegen · [@Github](https://github.com/<github_handle_2>)
  
 Product owners:
