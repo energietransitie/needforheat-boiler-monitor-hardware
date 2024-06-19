@@ -38,15 +38,12 @@ To fabricate the printed circuit board you can use various PCB services.
 
 The folder [pcb production](./pcb_production) includes all exported files needed to have the PCBs manufactured by [JLCPCB](https://www.jlcpcb.com). Upload the [zipped gerber file](./pcb_production/Gerber) to the [JLCPCB quote page](https://cart.jlcpcb.com/quote), select the amount of PCBs and a colour for the silkscreen. All other options can be left on default. If SMT assembly is desired, also select this option before ordering. This will take you to a page where the BOM and CPL files can be uploaded. Use the files in [BOM-CPL](./pcb_production/BOM-CPL).
 
+### 3D Designs
+To fabricate the pipe clamps you can use your own 3D printer or use a 3D printing service. 
 
-In the current version of this design, no SMT assembly is used. Hence, we do not provide BOM*.csv and CPL-*.csv files in the folder [pcb/jlcpcb/assembly](./pcb/jlcpcb/assembly)
+<img src="./3D_designs/Images/Pipeclamp.jpg" height="600" />
 
-### Enclosure
-To fabricate the enclosure you can use your own 3D printer or use a 3D printing service. 
-
-<img src="./images/enclosure.jpg" height="600" />
-
-The folder [enclosure/fabrication](./enclosure/fabrication) contains exported STL files for the [case](./enclosure/fabrication/twomes-hardware-repository-template-case.stl) and [lid](./enclosure/twomes-hardware-repository-template-lid.step) of the Twomes Something device enclosure. The STL files can be imported into any slicer and turned into G-Code for a 3D printer.
+The folder [3D_designs/Production](./3D_designs/Production) contains exported STL files for the [clamp](./3D_designs/Production/Pipeclamp.stl) and [lock](./3D_designs/Production/Pipeclamp_lock.stl) of pipeclamps. The STL files can be imported into any slicer and turned into G-Code for a 3D printer.
 
 ## Developing
 ### Printed Circuit Board
