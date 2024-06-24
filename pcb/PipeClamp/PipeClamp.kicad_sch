@@ -1,0 +1,1748 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "515feff6-48e9-4c82-a357-09cbfb8e340f")
+	(paper "A5")
+	(title_block
+		(title "NFH PipeSensors")
+		(date "2024-04-17")
+		(company "Research Group Energy Transition. Windesheim Univeristy of Applied Sciences")
+		(comment 1 "Author: Bram Busch, Daan Tellegen")
+		(comment 2 "Reviewed:")
+	)
+	(lib_symbols
+		(symbol "Connector:RJ12"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -5.08 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "RJ12"
+				(at 2.54 11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0.635 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "6P6C RJ socket connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "6P6C* RJ12* RJ18* RJ25*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "RJ12_0_1"
+				(polyline
+					(pts
+						(xy -6.35 -1.905) (xy -5.08 -1.905) (xy -5.08 -1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -0.635) (xy -5.08 -0.635) (xy -5.08 -0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 0.635) (xy -5.08 0.635) (xy -5.08 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 1.905) (xy -5.08 1.905) (xy -5.08 1.905)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 3.175) (xy -5.08 3.175) (xy -5.08 3.175)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 4.445) (xy -6.35 4.445) (xy -6.35 4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -6.35 -4.445) (xy -6.35 6.985) (xy 3.81 6.985) (xy 3.81 4.445) (xy 5.08 4.445) (xy 5.08 3.175)
+						(xy 6.35 3.175) (xy 6.35 -0.635) (xy 5.08 -0.635) (xy 5.08 -1.905) (xy 3.81 -1.905) (xy 3.81 -4.445)
+						(xy -6.35 -4.445) (xy -6.35 -4.445)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 7.62 10.16)
+					(end -7.62 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "RJ12_1_1"
+				(pin passive line
+					(at 10.16 -5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 2.54 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 5.08 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 7.62 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sensor_Temperature:DS18B20Z"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -3.81 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DS18B20Z"
+				(at 5.08 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+				(at -25.4 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf"
+				(at -3.81 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Programmable Resolution 1-Wire Digital Thermometer SOIC-8"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "OneWire 1Wire Maxim Dallas"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "DS18B20Z_0_1"
+				(rectangle
+					(start -5.08 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -3.302 -2.54)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -2.667 -1.905)
+					(end -3.937 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -2.667 3.175)
+					(mid -3.302 3.8073)
+					(end -3.937 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 0.635) (xy -3.302 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 1.27) (xy -3.302 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 1.905) (xy -3.302 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 2.54) (xy -3.302 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 3.175) (xy -3.937 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.937 3.175) (xy -3.302 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.667 3.175) (xy -2.667 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "DS18B20Z_1_1"
+				(pin no_connect line
+					(at -5.08 2.54 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -5.08 0 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "V_{DD}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "DQ"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at -5.08 -2.54 0)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 2.54 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin no_connect line
+					(at 5.08 -2.54 180)
+					(length 2.54) hide
+					(name "NC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 38.1 50.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0721b4ed-8562-473c-8849-4cdcc6b9326b")
+	)
+	(junction
+		(at 50.8 17.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3ec6cda4-b665-4651-80d3-f1e0a1f655e5")
+	)
+	(junction
+		(at 38.1 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4269a9e5-4f63-4571-9ac9-2aee88bd775d")
+	)
+	(junction
+		(at 50.8 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5117043c-eb07-4071-8caa-3e6b9c2e18b7")
+	)
+	(junction
+		(at 38.1 20.32)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54122973-9729-4261-a2a4-fc28a7d091fc")
+	)
+	(junction
+		(at 38.1 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "924a4769-40a4-47f7-b842-ae333ac578ec")
+	)
+	(junction
+		(at 38.1 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a274c59a-fcfd-42a3-a9a5-33177097bd98")
+	)
+	(junction
+		(at 50.8 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b84bfc64-eff4-41a7-8ed8-893c20eb24fe")
+	)
+	(junction
+		(at 38.1 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f652256f-d441-4722-b972-fff3ca252376")
+	)
+	(junction
+		(at 50.8 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f957f243-568e-4070-9737-14724c912183")
+	)
+	(wire
+		(pts
+			(xy 50.8 17.78) (xy 63.5 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04058728-7497-4982-84c9-72d8eebd6133")
+	)
+	(wire
+		(pts
+			(xy 35.56 53.34) (xy 38.1 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04e11c16-1db3-413f-9d42-2a19994aa1b5")
+	)
+	(wire
+		(pts
+			(xy 35.56 48.26) (xy 38.1 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ba9a309-6f44-4c7b-8e58-20f6fe17cf95")
+	)
+	(wire
+		(pts
+			(xy 38.1 17.78) (xy 38.1 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26949056-9f9e-42ce-ba7d-9d747dc72c6d")
+	)
+	(wire
+		(pts
+			(xy 35.56 20.32) (xy 38.1 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b0cc5e1-8d2a-4f7e-8451-cac771620af3")
+	)
+	(wire
+		(pts
+			(xy 63.5 54.61) (xy 63.5 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d06a49c-bc94-496d-a5bb-9717dee521b8")
+	)
+	(polyline
+		(pts
+			(xy 88.9 12.7) (xy 88.9 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d0a0e88-00b6-4e89-ac93-4db18553e2c4")
+	)
+	(wire
+		(pts
+			(xy 38.1 27.94) (xy 38.1 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2faecd74-b558-430b-b5e9-25824df0ad11")
+	)
+	(polyline
+		(pts
+			(xy 12.7 67.31) (xy 88.9 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3823016c-ac26-48b3-8ca3-b4188a0f56aa")
+	)
+	(wire
+		(pts
+			(xy 38.1 45.72) (xy 38.1 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42545adb-bcab-45ea-a280-d6349b374bc1")
+	)
+	(wire
+		(pts
+			(xy 38.1 55.88) (xy 38.1 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47f3fc79-4e0a-4f5f-89e6-4d20f1e896b6")
+	)
+	(wire
+		(pts
+			(xy 63.5 33.02) (xy 50.8 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5160c3ad-bb7d-4b90-8181-2f6478acb3cb")
+	)
+	(wire
+		(pts
+			(xy 35.56 30.48) (xy 38.1 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53f851e1-0579-4532-b617-cd2f43f7ca5b")
+	)
+	(wire
+		(pts
+			(xy 38.1 50.8) (xy 43.18 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "566918c4-1fcd-4c68-a432-a588f9608889")
+	)
+	(wire
+		(pts
+			(xy 38.1 43.18) (xy 38.1 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59816557-0b0e-48e0-b7f9-faf94ac73d99")
+	)
+	(wire
+		(pts
+			(xy 38.1 33.02) (xy 50.8 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63a79938-057e-4f22-a815-7e6af542823e")
+	)
+	(wire
+		(pts
+			(xy 38.1 53.34) (xy 38.1 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75761fcb-51a7-4079-b81d-6b4382505793")
+	)
+	(polyline
+		(pts
+			(xy 12.7 67.31) (xy 12.7 12.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7850670b-61f7-4ef8-a088-a8be8fdd92a4")
+	)
+	(wire
+		(pts
+			(xy 38.1 58.42) (xy 50.8 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "826c8779-4625-40b4-97ec-b45bd4945bd8")
+	)
+	(wire
+		(pts
+			(xy 35.56 58.42) (xy 38.1 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85c4e69f-4f08-488c-bd3f-49de204a8281")
+	)
+	(wire
+		(pts
+			(xy 35.56 22.86) (xy 38.1 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88b63fac-2913-4388-8731-3b1f06e3e651")
+	)
+	(wire
+		(pts
+			(xy 38.1 20.32) (xy 38.1 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a6a4fb3-b73f-4c23-ab5a-76091e243ce2")
+	)
+	(wire
+		(pts
+			(xy 38.1 33.02) (xy 38.1 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "997ee466-b580-4339-b471-512fef8aee45")
+	)
+	(wire
+		(pts
+			(xy 50.8 17.78) (xy 38.1 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a08fc350-f763-436c-a47b-2cacfbc6f3fe")
+	)
+	(wire
+		(pts
+			(xy 35.56 33.02) (xy 38.1 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1c39c5b-8676-4650-b784-7f0dae1ac5b1")
+	)
+	(wire
+		(pts
+			(xy 35.56 55.88) (xy 38.1 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a98039a6-79be-45a0-bf2e-7bc606d46c4a")
+	)
+	(wire
+		(pts
+			(xy 35.56 25.4) (xy 38.1 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac5bf6c6-72c2-41f4-af6e-92ea54e79210")
+	)
+	(wire
+		(pts
+			(xy 35.56 27.94) (xy 38.1 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0cba330-f512-4b26-9809-61f531fec27d")
+	)
+	(wire
+		(pts
+			(xy 35.56 45.72) (xy 38.1 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7d16101-9666-4f7c-b56c-f683f14e68db")
+	)
+	(wire
+		(pts
+			(xy 63.5 43.18) (xy 63.5 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c87624ff-043a-4c9d-ab2a-e7d62e96aa87")
+	)
+	(wire
+		(pts
+			(xy 50.8 58.42) (xy 63.5 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd7aaec4-90f0-466d-adbe-a4fdabba83af")
+	)
+	(polyline
+		(pts
+			(xy 12.7 12.7) (xy 88.9 12.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e192e360-17a1-477e-b3e9-e5b36ea596d0")
+	)
+	(wire
+		(pts
+			(xy 38.1 43.18) (xy 50.8 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1f28148-e6e0-4c5a-8243-12df65e6173b")
+	)
+	(wire
+		(pts
+			(xy 63.5 17.78) (xy 63.5 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f74c0188-682a-4874-ab70-f41caa64d2ae")
+	)
+	(wire
+		(pts
+			(xy 63.5 29.21) (xy 63.5 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f81b628a-67c9-448e-98f1-e322c9591305")
+	)
+	(wire
+		(pts
+			(xy 38.1 25.4) (xy 43.18 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f85ce163-5a27-442a-b919-e5a07b41510a")
+	)
+	(wire
+		(pts
+			(xy 35.56 50.8) (xy 38.1 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f929fa95-4956-4bd7-a907-b231e86bd3d6")
+	)
+	(wire
+		(pts
+			(xy 50.8 43.18) (xy 63.5 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe662008-6711-4876-b5ba-28e006ba5b78")
+	)
+	(text "Temp PipeSensors"
+		(exclude_from_sim no)
+		(at 22.352 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "40329daf-7825-42cf-9eb2-b099beca599a")
+	)
+	(label "VCC-U2"
+		(at 38.1 43.18 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1673647c-0f42-408b-9310-731be9902aa8")
+	)
+	(label "VCC-U1"
+		(at 38.1 17.78 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7ccc3aae-becf-491c-ad44-f98efff789ea")
+	)
+	(label "GND-U1"
+		(at 38.1 33.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cd62b768-d558-46e6-8e8d-17c1c0434da1")
+	)
+	(label "GND-U2"
+		(at 38.1 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f601fc44-9569-4fac-8fca-ac8b7b34f6be")
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS18B20Z")
+		(at 50.8 25.4 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "043af283-dcf3-4324-9be1-30fba84421ef")
+		(property "Reference" "U1"
+			(at 52.07 19.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DS18B20Z"
+			(at 52.07 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 76.2 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf"
+			(at 54.61 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Programmable Resolution 1-Wire Digital Thermometer SOIC-8"
+			(at 50.8 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "e245d60b-c8e8-4d21-b610-5ec3d13bf35e")
+		)
+		(pin "6"
+			(uuid "a0a5afe2-05d4-4fa6-8a4c-fc8c7e7f0eb7")
+		)
+		(pin "8"
+			(uuid "bf6cb483-0be7-4348-add6-7322ad2f466c")
+		)
+		(pin "3"
+			(uuid "99b30d37-f373-4893-8f4c-f4665104d65d")
+		)
+		(pin "5"
+			(uuid "fe616a4c-48a3-49ec-a94c-75fecf88674f")
+		)
+		(pin "2"
+			(uuid "8a10727d-1d08-444a-9a76-a502df09ed62")
+		)
+		(pin "4"
+			(uuid "c65d8ae4-fd98-4006-b370-fda78491d31a")
+		)
+		(pin "1"
+			(uuid "f20ed572-d009-435f-859d-d45de0c993fe")
+		)
+		(instances
+			(project "NFH PipeSensors"
+				(path "/515feff6-48e9-4c82-a357-09cbfb8e340f"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ12")
+		(at 25.4 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76d6c9b7-6326-4ed9-9784-b088e608b320")
+		(property "Reference" "J1"
+			(at 25.4 14.224 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 25.4 16.764 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_RJ:RJ25_Wayconn_MJEA-660X1_Horizontal"
+			(at 25.4 27.305 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 27.305 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 25.4 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6cbc1b24-7e02-4ace-a771-cad5c66a933d")
+		)
+		(pin "1"
+			(uuid "9dc456bb-59f0-4537-82bf-b843dfe5595c")
+		)
+		(pin "2"
+			(uuid "8f2fa11a-8cd0-4536-9bcc-81a8245c219c")
+		)
+		(pin "4"
+			(uuid "1d1983a8-04e3-4361-8c23-acc6f7060e10")
+		)
+		(pin "5"
+			(uuid "64eabf69-cb21-4bc4-872b-e67b7f302164")
+		)
+		(pin "6"
+			(uuid "bdd75692-d9ba-418e-aaad-d429c3af5158")
+		)
+		(instances
+			(project "NFH PipeSensors"
+				(path "/515feff6-48e9-4c82-a357-09cbfb8e340f"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 63.5 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7809b75c-7bbf-404e-a167-bc35cc974d27")
+		(property "Reference" "C1"
+			(at 67.31 24.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 67.31 26.6699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 64.4652 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 63.5 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0f30f720-e7b0-4e63-ae62-7027d8f6a6c9")
+		)
+		(pin "2"
+			(uuid "cd829ae1-774e-462a-890d-e283917c2873")
+		)
+		(instances
+			(project "NFH PipeSensors"
+				(path "/515feff6-48e9-4c82-a357-09cbfb8e340f"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 63.5 50.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7ba8b8c5-ec2d-43fc-9ff4-2770d3f50a68")
+		(property "Reference" "C2"
+			(at 67.31 49.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 67.31 52.0699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 64.4652 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 63.5 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 63.5 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ab491ff6-f2c5-44e4-be34-8f7162b38877")
+		)
+		(pin "2"
+			(uuid "2dc48081-0536-4ad3-9bd5-19733df48194")
+		)
+		(instances
+			(project "NFH PipeSensors"
+				(path "/515feff6-48e9-4c82-a357-09cbfb8e340f"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:RJ12")
+		(at 25.4 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "816aa700-b8fc-4502-a66a-31f1b19a2e2f")
+		(property "Reference" "J2"
+			(at 25.4 39.624 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "RJ12"
+			(at 25.4 42.164 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_RJ:RJ25_Wayconn_MJEA-660X1_Horizontal"
+			(at 25.4 52.705 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 52.705 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "RJ connector, 6P6C (6 positions 6 connected)"
+			(at 25.4 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39764bfe-f910-46e3-b34f-a9efb4d15a33")
+		)
+		(pin "3"
+			(uuid "e6f8600f-3059-4d63-9f20-c97b71010e14")
+		)
+		(pin "4"
+			(uuid "89cf2e1d-2c33-4672-942c-3fb9ebb8904a")
+		)
+		(pin "5"
+			(uuid "fed77df0-53ee-49de-9a97-1cb463c76e32")
+		)
+		(pin "6"
+			(uuid "8d7a0e20-ed37-40f0-97e3-bf45da1a3643")
+		)
+		(pin "2"
+			(uuid "0511bb78-6cd0-4c0b-a630-cd8deb793d4f")
+		)
+		(instances
+			(project "NFH PipeSensors"
+				(path "/515feff6-48e9-4c82-a357-09cbfb8e340f"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:DS18B20Z")
+		(at 50.8 50.8 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b369e9dd-9cc5-446f-be02-5d5ed6a5318d")
+		(property "Reference" "U2"
+			(at 52.07 44.196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DS18B20Z"
+			(at 52.07 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 76.2 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf"
+			(at 54.61 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Programmable Resolution 1-Wire Digital Thermometer SOIC-8"
+			(at 50.8 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "7"
+			(uuid "c958c36d-cbca-422d-8f6b-256a87016655")
+		)
+		(pin "6"
+			(uuid "b346fb3e-4bd5-4517-9f96-c3348a90504d")
+		)
+		(pin "8"
+			(uuid "bbce9fa9-e8c6-4d14-82d0-f4e32faf9bd8")
+		)
+		(pin "3"
+			(uuid "f769dbc2-e240-44c6-89ea-5ece08284539")
+		)
+		(pin "5"
+			(uuid "67be8e8c-ebb4-4ccd-a428-b71ceb1fac5a")
+		)
+		(pin "2"
+			(uuid "b480c1e6-dd29-4f01-8099-0708444fb7fe")
+		)
+		(pin "4"
+			(uuid "554d1b31-b7fd-4119-95e8-48db58dd362b")
+		)
+		(pin "1"
+			(uuid "dec83f27-8671-468e-8225-86f04ed7bd2c")
+		)
+		(instances
+			(project "NFH PipeSensors"
+				(path "/515feff6-48e9-4c82-a357-09cbfb8e340f"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

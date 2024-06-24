@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name "OpenThermMonitor")(type "KiCad")(uri "${KIPRJMOD}/OpenThermMonitor.pretty")(options "")(descr ""))
+  (lib (name "OpenThermSplitter")(type "KiCad")(uri "${KIPRJMOD}/OpenThermSplitter.pretty")(options "")(descr ""))
+)
