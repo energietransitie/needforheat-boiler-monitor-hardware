@@ -58,11 +58,11 @@ JLCPCB provides detailed steps on their website to select component assembly, in
 
 In the table below, you will find the files per PCB.
 
-| PCB                       | zipped gerber                                                                                                      | BOM                                                                                                                                    | CPL                                                                                                            |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| BoilerBASE                | [GERBER-BoilerBASE.zip](pcb\BoilerBASE\jlcpcb\gerber\GERBER-BoilerBASE.zip)                                        | [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\assembly\BoilerBASE\BOM-BoilerBASE.csv)                           |  [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\assembly\BoilerBASE\CPL-BoilerBASE.csv)  |
-| Thermostat Cable Splitter | [GERBER-ThermostatCableSplitter.zip](pcb\ThermostatCableSplitter\jlcpcb\gerber\GERBER-ThermostatCableSplitter.zip) | [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\assembly\ThermostatCableSplitter\BOM-ThermostatCableSplitter.csv) | [CPL-ThermostatCableSplitter.csv](pcb\jlcpcb\assembly\ThermostatCableSplitter\CPL-ThermostatCableSplitter.csv) |
-| Pipe Clamps               | [GERBER-PipeClamp.zip](pcb\PipeClamp\jlcpcb\gerber\GERBER-PipeClamp.zip)                                           | [BOM-PipeClamp.csv](pcb\PipeClamp\jlcpcb\assembly\Splitter\BOM-PipeClamp.csv)                                                          | [CPL-PipeClamp.csv](pcb\jlcpcb\assembly\Splitter\CPL-PipeClamp.csv)                                            |
+| PCB                       | zipped gerber                                                                                                      | BOM                                                                                                                                    | CPL                                                                                                            | Components that do not need to be placed |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| BoilerBASE                | [GERBER-BoilerBASE.zip](pcb\BoilerBASE\jlcpcb\gerber\GERBER-BoilerBASE.zip)                                        | [BOM-BoilerBASE.csv](pcb\BoilerBASE\jlcpcb\assembly\BoilerBASE\BOM-BoilerBASE.csv)                                                     | [BOM-BoilerBASE.csv](pcb\BoilerBASE\jlcpcb\assembly\BoilerBASE\CPL-BoilerBASE.csv)                             |                                          |
+| Thermostat Cable Splitter | [GERBER-ThermostatCableSplitter.zip](pcb\ThermostatCableSplitter\jlcpcb\gerber\GERBER-ThermostatCableSplitter.zip) | [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\assembly\ThermostatCableSplitter\BOM-ThermostatCableSplitter.csv) | [CPL-ThermostatCableSplitter.csv](pcb\jlcpcb\assembly\ThermostatCableSplitter\CPL-ThermostatCableSplitter.csv) |  `R13`, `R14`, `R15`                     |
+| Pipe Clamps               | [GERBER-PipeClamp.zip](pcb\PipeClamp\jlcpcb\gerber\GERBER-PipeClamp.zip)                                           | [BOM-PipeClamp.csv](pcb\PipeClamp\jlcpcb\assembly\Splitter\BOM-PipeClamp.csv)                                                          | [CPL-PipeClamp.csv](pcb\jlcpcb\assembly\Splitter\CPL-PipeClamp.csv)                                            |                                          |
 
 ### Enclosures
 
@@ -175,6 +175,8 @@ To-do:
   * Design an enclosure.
 * BoilerBASE
   * Add an 868 MHz SMD transceiver chip to enable monitoring various wireless thermostats.
+  * Evaluate relocating and optimizing the 2x8 pin header from the bottom side to the top side of the PCB to reduce JLCPCB manufacturing costs. 
+  * Improve BOM and CPL for JLCPCB through hole assembly. 
   * Design an enclosure that adds multiple mounting options
     * room to embed permanent magnets to make it stick to flat metallig surfaces of boilers;
     * a tie wrap hole.
