@@ -32,9 +32,12 @@ This integrated device can:
 - [Credits](#credits)
 
 ## General info
-This repository contains the open hardware designs files and production files for the NeedForHeat Boiler Monitor. It also includes a `docs` folder with the recent Kicad files.
+This repository contains the open hardware designs files and production files for the NeedForHeat Boiler Monitor. It also includes a `docs` folder with recent printouts of:
+* BoilerBASE: [schematics](./docs/BoilerBase-sch.pdf) and [PCB layout](./docs/BoilerBase-pcb.pdf);
+* Thermostat Cable Splitter:[schematics](./docs/ThermostatCableSplitter-sch.pdf) and [PCB layout](./docs/ThermostatCableSplitter-pcb.pdf);
+* Pipe Clamps: [schematics](./docs/PipeClamp-pcb.pdf) and [PCB layout](./docs/PipeClamp-pcb.pdf).
 
-The splitter features a 4 wire pluggable screw terminal on each side in which the cables can be connected to in almost (see note) any orientation without the installer having to worry about the order.
+The splitter features a 4 wire pluggable screw terminal on each side in which the cables can be connected to in almost any order.
 
 The associated firmware that you need to run on this device was not yet implemented. I will be a combination of:
 * [needforheat-generic-firmware](https://github.com/energietransitie/needforheat-generic-firmware) compiled with `env:M5STACK_COREINK`
@@ -57,7 +60,7 @@ In the table below, you will find the files per PCB.
 
 | PCB                       | zipped gerber                                                                                                      | BOM                                                                                                                                    | CPL                                                                                                            |
 | ------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| BoilerBASE                | [GERBER-BoilerBASE.zip](pcb\BoilerBASE\jlcpcb\gerber\GERBER-BoilerBASE.zip)                                        | [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\assembly\BoilerBASE\BOM-BoilerBASE.csv)                           |                                                                                                                |
+| BoilerBASE                | [GERBER-BoilerBASE.zip](pcb\BoilerBASE\jlcpcb\gerber\GERBER-BoilerBASE.zip)                                        | [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\assembly\BoilerBASE\BOM-BoilerBASE.csv)                           |  [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\assembly\BoilerBASE\CPL-BoilerBASE.csv)  |
 | Thermostat Cable Splitter | [GERBER-ThermostatCableSplitter.zip](pcb\ThermostatCableSplitter\jlcpcb\gerber\GERBER-ThermostatCableSplitter.zip) | [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\assembly\ThermostatCableSplitter\BOM-ThermostatCableSplitter.csv) | [CPL-ThermostatCableSplitter.csv](pcb\jlcpcb\assembly\ThermostatCableSplitter\CPL-ThermostatCableSplitter.csv) |
 | Pipe Clamps               | [GERBER-PipeClamp.zip](pcb\PipeClamp\jlcpcb\gerber\GERBER-PipeClamp.zip)                                           | [BOM-PipeClamp.csv](pcb\PipeClamp\jlcpcb\assembly\Splitter\BOM-PipeClamp.csv)                                                          | [CPL-PipeClamp.csv](pcb\jlcpcb\assembly\Splitter\CPL-PipeClamp.csv)                                            |
 
@@ -67,11 +70,13 @@ To manufacure the pipe clamps you can use your own 3D printer or use a 3D printi
 
 <img src="./images/PipeClamp_enclosure.jpg" height="300" />
 
-The folder [enclosure/Production](./enclosure/Production) contains exported STL files for the [pipe clamps](./enclosure/Production/Pipeclamp.stl) and [pipe clamp locks](./enclosure/Production/Pipeclamp_lock.stl). The STL files can be imported into any slicer and turned into G-Code for a 3D printer.
+The folder [enclosure](./enclosure) contains exported STL files for:
+* [Boiler-BASE enclosure](./enclosure/BoilerBASE/fabrication/BoilerBase.STL);
+* [Pipe Clamp enclosure](./enclosure/PipeClamp/fabrication/PipeClamp.stl) and [Pipe Clamp enclosure locks](./enclosure/PipeClamp/fabrication/PipeClamp_lock.stl). 
+ 
+The STL files can be imported into any slicer and turned into G-Code for a 3D printer.
 
-We do not yet have designs for the following enclusures:
-* Boiler-BASE enclosure;
-* Thermostat Cable Splitter enclosure.
+We do not yet have designs for the Thermostata Cable Splitter.
 
 ## Deploying
 
@@ -151,9 +156,9 @@ To change the hardware design of an enclosure, you need either:
 
 
 The source files of the enclosures can be found in subfolders of the folder [enclosure](./enclosure):
-* [BoilerBASE](./enclosure/)
+* [BoilerBASE](./enclosure/BoilerBASE)
 * ThermostatCableSplitter (*We do not yet have a design for this enclosure*)
-* [PipeClamp](./pcb/PipeClamp/)
+* [PipeClamp](./enclosure/PipeClamp/)
 
 
 ## Features
@@ -169,8 +174,10 @@ To-do:
   * Redesign the thermostat side such that the user can mount the wires truly in any order.
   * Design an enclosure.
 * BoilerBASE
-  * Design an enclosure for the BoilerBASE.
-  * Add 868 MHz SMD transceiver chip to enable monitoring various wireless thermostats.
+  * Add an 868 MHz SMD transceiver chip to enable monitoring various wireless thermostats.
+  * Design an enclosure that adds multiple mounting options
+    * room to embed permanent magnets to make it stick to flat metallig surfaces of boilers;
+    * a tie wrap hole.
 * Pipe Clamps
   * Redesign to ensure strength and durability.
 
