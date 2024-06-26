@@ -12,7 +12,7 @@ This integrated device can:
 * monitor with supply and return water temperatures, similar to the [Twomes Temperature Monitor Hardware](https://github.com/energietransitie/twomes-temp-monitor-hardware).
 
 <img src="./images/ThermostatCableSplitter_PCB_top.jpg" width="300"  />
-<!-- it would be better to have an image of the entire solution, including cables, like th assignment presentation -->
+<!-- it would be better to have an image of the entire solution, including cables, like the assignment presentation -->
 
 ## Table of contents <!-- omit in toc -->
 - [General info](#general-info)
@@ -20,9 +20,9 @@ This integrated device can:
   - [Printed Circuit Board](#printed-circuit-board)
   - [Enclosures](#enclosures)
 - [Deploying](#deploying)
-  - [Connecting the devices](#connecting-the-devices)
-    - [Tools needed](#tools-needed)
-    - [Steps](#steps)
+  - [Cost](#cost)
+  - [Connecting](#connecting)
+  - [Disconnecting](#disconnecting)
 - [Developing](#developing)
   - [Printed Circuit Board](#printed-circuit-board-1)
   - [Enclosures](#enclosures-1)
@@ -58,11 +58,11 @@ JLCPCB provides detailed steps on their website to select component assembly, in
 
 In the table below, you will find the files per PCB.
 
-| PCB                       | zipped gerber                                                                                                      | BOM                                                                                                                                    | CPL                                                                                                            | Components that do not need to be placed |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
-| BoilerBASE                | [GERBER-BoilerBASE.zip](pcb\BoilerBASE\jlcpcb\gerber\GERBER-BoilerBASE.zip)                                        | [BOM-BoilerBASE.csv](pcb\BoilerBASE\jlcpcb\assembly\BoilerBASE\BOM-BoilerBASE.csv)                                                     | [BOM-BoilerBASE.csv](pcb\BoilerBASE\jlcpcb\assembly\BoilerBASE\CPL-BoilerBASE.csv)                             |                                          |
-| Thermostat Cable Splitter | [GERBER-ThermostatCableSplitter.zip](pcb\ThermostatCableSplitter\jlcpcb\gerber\GERBER-ThermostatCableSplitter.zip) | [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\assembly\ThermostatCableSplitter\BOM-ThermostatCableSplitter.csv) | [CPL-ThermostatCableSplitter.csv](pcb\jlcpcb\assembly\ThermostatCableSplitter\CPL-ThermostatCableSplitter.csv) |  `R13`, `R14`, `R15`                     |
-| Pipe Clamps               | [GERBER-PipeClamp.zip](pcb\PipeClamp\jlcpcb\gerber\GERBER-PipeClamp.zip)                                           | [BOM-PipeClamp.csv](pcb\PipeClamp\jlcpcb\assembly\Splitter\BOM-PipeClamp.csv)                                                          | [CPL-PipeClamp.csv](pcb\jlcpcb\assembly\Splitter\CPL-PipeClamp.csv)                                            |                                          |
+| PCB                       | zipped gerber                                                                                               | BOM                                                                                                                           | CPL                                                                                                   | Components that do not need to be placed |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| BoilerBASE                | [GERBER-BoilerBASE.zip](pcb\BoilerBASE\jlcpcb\GERBER-BoilerBASE.zip)                                        | [BOM-BoilerBASE.csv](pcb\BoilerBASE\jlcpcb\BoilerBASE\BOM-BoilerBASE.csv)                                                     | [BOM-BoilerBASE.csv](pcb\BoilerBASE\jlcpcb\BoilerBASE\CPL-BoilerBASE.csv)                             |                                          |
+| Thermostat Cable Splitter | [GERBER-ThermostatCableSplitter.zip](pcb\ThermostatCableSplitter\jlcpcb\GERBER-ThermostatCableSplitter.zip) | [BOM-ThermostatCableSplitter.csv](pcb\ThermostatCableSplitter\jlcpcb\ThermostatCableSplitter\BOM-ThermostatCableSplitter.csv) | [CPL-ThermostatCableSplitter.csv](pcb\jlcpcb\ThermostatCableSplitter\CPL-ThermostatCableSplitter.csv) | `R13`, `R14`, `R15`                      |
+| Pipe Clamps               | [GERBER-PipeClamp.zip](pcb\PipeClamp\jlcpcb\GERBER-PipeClamp.zip)                                           | [BOM-PipeClamp.csv](pcb\PipeClamp\jlcpcb\Splitter\BOM-PipeClamp.csv)                                                          | [CPL-PipeClamp.csv](pcb\jlcpcb\Splitter\CPL-PipeClamp.csv)                                            |                                          |
 
 ### Enclosures
 
@@ -80,60 +80,59 @@ We do not yet have designs for the Thermostata Cable Splitter.
 
 ## Deploying
 
+### Cost
 To deploy the NeedForHeat Boiler Module to a home, you need all hardware listed below. Prices indicate price per Boiler Monitor, based on ordering enough hardware for 10 Boiler Monitors, June 2024 including 21% VAT and shipping to an address in the Netherlands.
 
-| #   | Item                                                                                                                                                 | Supplier    | Price per Unit | Subtotal | Shipping |  Total |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------- | -------------: | -------: | -------: | -----: |
-| 1   | BoilerBASE PCB                                                                                                                                       | JLCPCB      |              ? |        ? |        ? |      ? |
-| 1   | BoilerBASE 3D-printed enclosure                                                                                                                      |             |              ? |        ? |        ? |      ? |
-| 1   | Thermostat Cable Splitter PCB                                                                                                                        | JLCPCB      |          €5.02 |    €5.02 |    €3.23 |  €8.25 |
-| 1   | Thermostat Cable Splitter enclosure                                                                                                                  |             |              ? |        ? |        ? |      ? |
-| 2   | [Pluggable Terminal Blocks (5.08 mm, 4 ways)](https://nl.farnell.com/camdenboss/ctb9209-4/terminal-block-pluggable-4pos/dp/2493644)                  |             |          €1.15 |    €2.30 |    €1.82 |  €3.12 |
-| 2   | Pipe clamp PCB                                                                                                                                       | JLCPCB      |          €3.41 |    €6.81 |    €2.30 |  €9.11 |
-| 2   | Pipe 3D printed enclosure                                                                                                                            |             |              ? |        ? |        ? |      ? |
-| 1   | [M5Stack CoreInk](https://www.tinytronics.nl/nl/platformen-en-systemen/m5stack/e-paper/m5stack-m5core-ink-met-1.54-inch-e-paper-e-ink-display-esp32) | TinyTronics |         €43.00 |   €43.00 |    €0.00 | €43.00 |
-| 2   | [RJ12 cable (male-male; 6P6C; straight; 1m)](https://www.allekabels.nl/rj12-kabel/7400/1181351/telefoonkabel-rj12.html)                              | AlleKabels  |          €3.08 |    €6.16 |    €0.13 |  €6.29 |
-| 1   | [RJ45 cable (male-male; 8P8C; straight; 1 m)](https://www.allekabels.nl/cat5e-kabel/15545/1098185/uutp-kabel-cat-5e.html)                            | AlleKabels  |          €1.29 |    €1.29 |    €0.13 |  €1.42 |
-| 1   | [USB-A 230V charger + USB-A to USB-C cable](https://www.allekabels.nl/usb-oplader/4508/3636716/usb-a-oplader-usb-c-kabel.html)                       | AlleKabels  |         €14.95 |   €14.95 |    €0.13 | €15.08 |
-|     | **TOTAL**                                                                                                                                            |             |          **?** |    **?** |    **?** |  **?** |
+| #   | Item                                                                                                                                                 | Supplier      | Price per Unit |   Subtotal |   Shipping |       Total |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- | -------------: | ---------: | ---------: | ----------: |
+| 1   | BoilerBASE PCB                                                                                                                                       |               |          €2.38 |      €2.38 |      €2.38 |       €4,79 |
+| 1   | BoilerBASE Enclosure                                                                                                                                 | JLCPCB        |          €1.23 |      €1.23 |      €2.38 |       €3.60 |
+| 1   | Thermostat Cable Splitter PCB[^1]                                                                                                                    | JLCPCB        |          €5.02 |      €5.02 |      €3.23 |       €8.25 |
+| 1   | Thermostat Cable Splitter enclosure                                                                                                                  |               |          €2.38 |      €2.38 |      €2.38 |       €4,79 |
+| 2   | [Pluggable Terminal Blocks (5.08 mm. 4 ways)](https://nl.farnell.com/camdenboss/ctb9209-4/terminal-block-pluggable-4pos/dp/2493644)                  |               |          €1.15 |      €2.30 |      €1.82 |       €3.12 |
+| 2   | Pipe Clamp PCB                                                                                                                                       | JLCPCB        |          €3.41 |      €6.81 |      €2.30 |       €9.11 |
+| 1   | Pipe Clamp enclosure                                                                                                                                 | JLCPCB        |          €1.00 |      €2.00 |      €2.38 |       €4.38 |
+| 4   | [LEGO pen with friction](https://www.blokjeskoning.nl/product/pen-stroef-pen-stroef-zwart/)                                                          | Blokjeskoning |          €0.03 |      €0.12 |      €0.30 |       €0.42 |
+| 1   | [M5Stack CoreInk](https://www.tinytronics.nl/nl/platformen-en-systemen/m5stack/e-paper/m5stack-m5core-ink-met-1.54-inch-e-paper-e-ink-display-esp32) | TinyTronics   |         €43.00 |     €43.00 |      €0.00 |      €43.00 |
+| 2   | [RJ12 cable (male-male; 6P6C; straight; 1 m)](https://www.allekabels.nl/rj12-kabel/7400/1181351/telefoonkabel-rj12.html)                             | AlleKabels    |          €3.08 |      €6.16 |      €0.13 |       €6.29 |
+| 1   | [RJ45 cable (male-male; 8P8C; straight; 1 m)](https://www.allekabels.nl/cat5e-kabel/15545/1098185/uutp-kabel-cat-5e.html)                            | AlleKabels    |          €1.29 |      €1.29 |      €0.13 |       €1.42 |
+| 1   | [USB-A 230V charger + USB-A to USB-C cable](https://www.allekabels.nl/usb-oplader/4508/3636716/usb-a-oplader-usb-c-kabel.html)                       | AlleKabels    |         €14.95 |     €14.95 |      €0.13 |      €15.08 |
+|     | **TOTAL**                                                                                                                                            |               |                | **€87.64** | **€17.46** | **€107.65** |
 
-### Connecting the devices
+[^1]: Only the Thermostat Cable Splitter remains at the home of the user; the rest can be sent back after the measurement period.
+
+### Connecting
 
 Assuming that the PCBs are fully assembled, the devices have an enclosure, and the device has been programmed with the [needforheat-p1-reader-firmware](https://github.com/energietransitie/needforheat-p1-reader-firmware), you can proceed and connect the device as follows:
 
-#### Tools needed
+Tools needed;
 - Screwdriver (flat head, 3 mm)
-- Wire stripper (or knife; be careful!)
-- Cutting pliers
+- Wire cutter
+- Wire stripper
 
-#### Steps
-
+Steps:
 1. **Unplug the power**
-   - Unplug the boiler from the power outlet.
-   - If the thermostat has a power plug or adapter, unplug it too.
+   - Unplug the boiler and thermostat from power outlets.
 
 2. **Connect the Boiler Monitor**
-   1. Locate the signal cable from the boiler to the thermostat.
-   1. Cut the signal cable at a point within 1.5 meters of a free power outlet.
-   1. Strip 2 cm of the outer sheath from both cable ends to expose the wires (expect 2-4 wired).
-   1. Strip the last 0.5 cm of insulation from each of the wires.
-   1. Remove the green pluggable screw terminal connectors from the Thermostat Cable Cplitter and open the terminal screws.
-   1. Insert the wires into the green pluggable screw terminal connectors in any order and tighten the screws.
-   1. Connect the green pluggable screw terminal connectors to the Thermostat Cable Splitter.
-      * The enclosure is labeled `cv` on the boiler side, near connector `J2`
-      * The enclusure is labeled `T` on the thermostat side, near connector `J1`.
-   1. Connect the 2x8 male pin header of the BoilerBASE to the M5Stack CoreInk MI-BUS, using the LEGO pens to ensure propert alignment and attachment of the BoilerBASE to the M5Stack CoreInk.
-   1. Use the RJ45 ethernet cable to connect the Thermostat Cable Splitter (connector `J3`) and the BoilerBASE.
-   1. Connect the USB-power adapter to the USB-C port of the M5Coreink+BoilerBASE and plug it into a power outlet.
-   1. Insert the PipleClamp PCBs into the PipeClamp enclosures and lock them with the PipeClamp locking pins.
-   1. Use the RJ12 cables to connect the BoilerBASE to the PipeCamps (2x)
-   1. Attach the M5Coreink+BoilerBASE to a metal side wall of the boiler using the magnetic back of the BoilerBASE.
-   1. Check whether the LEDs in the Thermostat Cable Splitter light about once every second. If you see <!-- TO DO:  desribe pattern -->, the splitter is working correctly.
-        > Note: If the LEDs don't light up, switch 2 wires in the pluggable screw connector on on the thermostat side: either switch wire 1 and 2 or switch wire 3 and 4. 
+   1. Cut the signal cable between the boiler and thermostat within 1.5 meters of a power outlet.
+   2. Strip 2 cm of the outer sheath and 0.5 cm of insulation from each wire.
+   3. Insert wires into the green pluggable screw terminal connectors and tighten screws.
+   4. Attach connectors to the Thermostat Cable Splitter (boiler side: connector `J2` on the PCB and `CV` on the enclosure, thermostat side: connector `J1` on the PCB and  `T` on the enclosure).
+   5. Connect the BoilerBASE to the M5Stack CoreInk MI-BUS using the 2x8 male pin header.
+   6. Use an ethernet cable (RJ45) to connect the Thermostat Cable Splitter (connector `J3` on the PCB) to the BoilerBASE (connector `J3` on the PCB).
+   7. Power the M5Coreink+BoilerBASE via USB-C.
+   8. Insert PipeClamp PCBs into enclosures and secure with locking pins.
+   9. Use cables (RJ12) to connect the BoilerBASE (connector `J1` and `J2` on the PCB; order does not matter) to the PipeClamps (connector `J1` on the PCB).
+   10. Attach the M5Coreink+BoilerBASE to the boiler with its magnetic back on a flat metal surface of the boiler.
+   11. Check LEDs on the Thermostat Cable Splitter; if not blinking, switch wires 1 & 2 or 3 & 4 in the pluggable screw connector on the thermostat side.
 
 3. **Plug the power back in**
-   - Plug the boiler back into the power outlet.
-   - Plug in the thermostat if it was unplugged earlier.
+   - Reconnect the boiler and thermostat to power outlets.
+
+### Disconnecting
+
+After the measurement period, the user only needs to unplug the RJ45 cable from the Thermostat Cable Splitter, which can remain connected with the thermostat cable in the user's home. The rest can be sent back and re-used in other homes. 
 
 ## Developing
 
@@ -163,25 +162,25 @@ The source files of the enclosures can be found in subfolders of the folder [enc
 
 ## Features
 The  NeedForHeat Boiler Monitor features the follwoing main hardware components:
-* Thermostat Cable Splitter PCB with 4-wire pluggable screw terminals and circuit to monitor OpenTherm communication, including LEDs and optocouplers;
-* circuit in the Thermostat Cable Splitter that allows (mostly) order agnostic connection of the 4 wires per pluggable screw connector (see also [connecting the devices](#connecting-the-devices));
-* Pipe Clamp PCB to measure temperatures from the supply and return pipes below the boiler.
-* Pipe Clamp enclosures, which can be 3D printed as a clamp that presses the temperature sensors agains a water pipe below a heating boiler and provide a  locking mechanism the prevent the PCB from falling out.
+- [x] Thermostat Cable Splitter PCB with 4-wire pluggable screw terminals and circuit to monitor OpenTherm communication, including LEDs and optocouplers;
+- [x] Circuit in the Thermostat Cable Splitter that allows (mostly) order agnostic connection of the 4 wires per pluggable screw connector (see also [connecting the devices](#connecting-the-devices));
+- [x] Pipe Clamp PCB to measure temperatures from the supply and return pipes below the boiler.
+- [x] Pipe Clamp enclosures, which can be 3D printed as a clamp that presses the temperature sensors agains a water pipe below a heating boiler and provide a  locking mechanism the prevent the PCB from falling out.
 
 To-do:
-* Thermostat Cable Splitter
-  * Reconsider the choice of pluggable screw connectors: reversible? lever-operated (e.g., [WAGO PCB terminal block](https://www.wago.com/global/c/pcb-terminal-blocks-and-pluggable-connectors?f=%3Afacet_product_Produkttyp_7845%3APCB%20terminal%20blocks%3Afacet_product_Leiterplattenklemmentyp_10295%3APCB%20terminal%20blocks%3Afacet_product_Polzahl_6%3A4%3Afacet_product_Betaetigungsart_01_3901%3ALever&sort=relevance&page=1&pageSize=50))?
-  * Redesign the thermostat side such that the user can mount the wires truly in any order.
-  * Design an enclosure.
+- Thermostat Cable Splitter
+  - [ ] Reconsider the choice of pluggable screw connectors: reversible? lever-operated (e.g., [WAGO PCB terminal block](https://www.wago.com/global/c/pcb-terminal-blocks-and-pluggable-connectors?f=%3Afacet_product_Produkttyp_7845%3APCB%20terminal%20blocks%3Afacet_product_Leiterplattenklemmentyp_10295%3APCB%20terminal%20blocks%3Afacet_product_Polzahl_6%3A4%3Afacet_product_Betaetigungsart_01_3901%3ALever&sort=relevance&page=1&pageSize=50))?
+  - [ ] Redesign the thermostat side such that the user can mount the wires truly in any order.
+  - [ ] Design an enclosure.
 * BoilerBASE
-  * Add an 868 MHz SMD transceiver chip to enable monitoring various wireless thermostats.
-  * Evaluate relocating and optimizing the 2x8 pin header from the bottom side to the top side of the PCB to reduce JLCPCB manufacturing costs. 
-  * Improve BOM and CPL for JLCPCB through hole assembly. 
-  * Design an enclosure that adds multiple mounting options
-    * room to embed permanent magnets to make it stick to flat metallig surfaces of boilers;
-    * a tie wrap hole.
+  - [ ] Add an 868 MHz SMD transceiver chip to enable monitoring various wireless thermostats.
+  - [ ] Evaluate relocating and optimizing the 2x8 pin header from the bottom side to the top side of the PCB to reduce JLCPCB manufacturing costs. 
+  - [ ] Improve BOM and CPL for JLCPCB through hole assembly. 
+  - [ ] Design an enclosure that adds multiple mounting options
+    - [ ] room to embed permanent magnets to make it stick to flat metallic surfaces of boilers;
+    - [ ] a tie wrap hole.
 * Pipe Clamps
-  * Redesign to ensure strength and durability.
+  - [ ] Redesign 3D printed enclosures to ensure strength and durability.
 
 
 ## Status
