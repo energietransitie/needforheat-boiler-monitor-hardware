@@ -1,0 +1,6 @@
+Designator,Footprint,Quantity,Value,LCSC Part #
+J1,RJ11,1,Temp-1,
+J2,RJ11,1,Temp-2,
+J3,RJ45-TE-connectivity,1,OpenThermMonitor,
+J5,PinHeader_2x08_P2.54mm_Vertical,1,M5stack-MI-bus,
+"R1, R2",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,2,4k7,
