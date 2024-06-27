@@ -173,8 +173,9 @@ To-do:
   - [ ] Redesign the thermostat side such that the user can mount the wires truly in any order.
   - [ ] Design an enclosure.
 * BoilerBASE
-  - [ ] Add an 868 MHz SMD transceiver chip to enable monitoring various wireless thermostats.
-  - [ ] Evaluate relocating and optimizing the 2x8 pin header from the bottom side to the top side of the PCB to reduce JLCPCB manufacturing costs. 
+  - [ ] Add an 868 MHz SMD transceiver chip to enable monitoring of wireless thermostats.
+  - [ ] Add connectors to BOM and CPL files and repair rotation errors to enable through-hole soldering by JLCPC.
+  - [ ] Evaluate relocating the 2x8 pin header from the bottom side to the top side of the PCB to reduce JLCPCB manufacturing costs. 
   - [ ] Improve BOM and CPL for JLCPCB through hole assembly. 
   - [ ] Design an enclosure that adds multiple mounting options
     - [ ] room to embed permanent magnets to make it stick to flat metallic surfaces of boilers;
