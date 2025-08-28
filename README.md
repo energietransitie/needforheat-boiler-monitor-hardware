@@ -69,7 +69,7 @@ In the table below, you will find the files per PCB.
 
 To manufacure the pipe clamps you can use your own 3D printer or use a 3D printing service. 
 
-<img src="./images/PipeClamp_enclosure.jpg" height="300" />
+<img src="./images/PipeClamp_enclosure.jpg" height="300" /> <img src="./images/PipeClampLock_enclosure.jpg" height="300" />
 
 The folder [enclosure](./enclosure) contains exported STL files for:
 * [Boiler-BASE enclosure](./enclosure/BoilerBASE/fabrication/BoilerBase.STL);
