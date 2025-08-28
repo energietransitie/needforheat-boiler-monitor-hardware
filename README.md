@@ -11,9 +11,7 @@ This integrated device can:
 * monitor on/off signals between boiler and thermostat that do not adhere to the OpenTherm standard;
 * monitor with supply and return water temperatures, similar to the [Twomes Temperature Monitor Hardware](https://github.com/energietransitie/twomes-temp-monitor-hardware).
 
-<img src="./images/BoilerBASE_PCB_top.jpg" height="300" />
-<img src="./images/ThermostatCableSplitter_PCB_top.jpg" height="300" />
-<img src="./images/PipeClamp_PCB_top.jpg" height="300" />
+<img src="./images/BoilerBASE_PCB_top.jpg" height="200" /> <img src="./images/ThermostatCableSplitter_PCB_top.jpg" height="200" /> <img src="./images/PipeClamp_PCB_top.jpg" height="200" />
 
 <!-- it would be better to have an image of the entire solution, including cables, like the assignment presentation -->
 
