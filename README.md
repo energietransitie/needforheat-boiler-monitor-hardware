@@ -11,7 +11,8 @@ This integrated device can:
 * monitor on/off signals between boiler and thermostat that do not adhere to the OpenTherm standard;
 * monitor with supply and return water temperatures, similar to the [Twomes Temperature Monitor Hardware](https://github.com/energietransitie/twomes-temp-monitor-hardware).
 
-<img src="./images/ThermostatCableSplitter_PCB_top.jpg" width="300"  />
+<img src="./images/BoilerBASE_PCB_top.jpg" height="300" /> <img src="./images/ThermostatCableSplitter_PCB_top.jpg" height="300" /> <img src="./images/PipeClamp_PCB_top.jpg" height="300" />
+
 <!-- it would be better to have an image of the entire solution, including cables, like the assignment presentation -->
 
 ## Table of contents <!-- omit in toc -->
@@ -68,7 +69,7 @@ In the table below, you will find the files per PCB.
 
 To manufacure the pipe clamps you can use your own 3D printer or use a 3D printing service. 
 
-<img src="./images/PipeClamp_enclosure.jpg" height="300" />
+<img src="./images/PipeClamp_enclosure.jpg" height="300" /> <img src="./images/PipeClampLock_enclosure.jpg" height="300" />
 
 The folder [enclosure](./enclosure) contains exported STL files for:
 * [Boiler-BASE enclosure](./enclosure/BoilerBASE/fabrication/BoilerBase.STL);
@@ -201,7 +202,7 @@ Earlier versions of this open hardware were designed by:
 * Kees Fokker
   
 Product owners:
-* Henri ter Hofte · [@henriterhofte](https://github.com/henriterhofte) · Twitter [@HeNRGi](https://twitter.com/HeNRGi)
+* Henri ter Hofte · [@henriterhofte](https://github.com/henriterhofte)
 * Marco Winkelman · [@MarcoW71](https://github.com/MarcoW71)
 
 We use and gratefully acknowlegde the efforts of the makers of the following designs:
